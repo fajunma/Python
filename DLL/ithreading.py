@@ -9,12 +9,12 @@ from time import ctime,sleep
 def music(func):
     for i in range(20):
         print( "I was listening to %s. %s" %(func,ctime()))
-        sleep(100)
+        sleep(1)
 
 def move(func):
     for i in range(20):
         print( "I was at the %s! %s" %(func,ctime()))
-        sleep(200)
+        sleep(2)
 
 
 if __name__ == '__main__':
@@ -23,5 +23,6 @@ if __name__ == '__main__':
     for t in threads:
         t.setDaemon(True)
         t.start()
+    t.join()
 
     print ("all over %s" %ctime())
