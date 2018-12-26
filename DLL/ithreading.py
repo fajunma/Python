@@ -21,8 +21,8 @@ if __name__ == '__main__':
     threads = [threading.Thread(target=music, args=(u'爱情买卖',)),threading.Thread(target=move, args=(u'阿凡达',))]
 
     for t in threads:
-        t.setDaemon(True)
+        t.setDaemon(True)#变成了一个守护线程
         t.start()
-    t.join()
+    t.join()#在主线程中插入执行
 
     print ("all over %s" %ctime())
