@@ -3,6 +3,7 @@ import time
 import winsound
 from playsound import playsound
 class App(object):
+    '''这是一个拍卖牌照的小闹钟'''
     def __init__(self, master):
         # 使用Frame增加一层容器
         fm1 = Frame(master)
