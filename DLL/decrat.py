@@ -12,7 +12,7 @@ def w1(func):
 
 @w1
 def f1(a):
-    b=input('you keybaod content?')
+    b=input('你想要输入的内容是什么?')
     print("---%d---" , a+b)
 
 if __name__ == '__main__':
