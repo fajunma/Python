@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from turtle import *
+import turtle
 from datetime import *
 
 
@@ -130,14 +130,14 @@ def main():
 
 if __name__ == "__main__":
     #main()
-    reset()
-    bgcolor('black')
-    speed(0)
+    turtle.reset()
+    turtle.bgcolor('black')
+    turtle.speed(0)
     colors = ['red', 'orange', 'green', 'cyan', 'blue', 'purple']
     for i in range(360):
-        pencolor(colors[i % 6])
-        fd(i * 3 / 6 + i)
-        left(61)
-        pensize(i * 6 / 200)
-    done()
+        turtle.pencolor(colors[i % 6])
+        turtle.fd(i * 3 / 6 + i)
+        turtle.left(61)
+        turtle.pensize(i * 6 / 200)
+    turtle.done()
 
