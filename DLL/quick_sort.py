@@ -18,4 +18,5 @@ def f(lst):
 
 a=[2,4,1,0,9,7,6,9,5,1,0,8]
 print(f(a))
+print('erfenfa')
 
